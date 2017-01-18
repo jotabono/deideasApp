@@ -1,0 +1,14 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{globals.companyname}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="card-background-page">
+  <ion-card *ngFor="let project of globals.projects">
+      <img src="{{project.attachments[0].images.thumbnail.url}}"/>
+    </ion-card>
+</ion-content>

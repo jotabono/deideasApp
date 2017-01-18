@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      {{globals.companyname}}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<div class="content" style="text-align:center" >
+    <h1 class="title">Hablemos de ideas</h1>
+    <h1 (click)="callIT('tel:+932808962')" class="title telf">
+  <ion-icon ios="ios-call" md="md-call">
+  </ion-icon>
+  93 280 89 62</h1>
+  </div>
+
+  <div #map id="map"></div>
+</ion-content>
+
+<style>
+  .scroll-content {
+    height: 100%
+  }
+
+  #map {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70%;
+  }
+</style>
